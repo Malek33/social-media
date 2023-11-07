@@ -1,0 +1,59 @@
+#aside-menu, #quick-chat-side{
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#aside-menu{
+    max-width: 20%;
+}
+
+#navbar{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #Home-Section{
+        justify-content: center;
+    }
+    .post-image-content-container{
+        width: calc(100vw - 50px);
+    }
+    .post-image-content{
+        width: 80vw;
+    }
+    .stories-home-section{
+        width: calc(100vw - 50px);
+    }
+    .bechNsalla7Screen{
+        padding: 15px 0px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #aside-menu{
+        display: none;
+    }
+    #navbar{
+        display: flex;
+    }
+    #Home-Section{
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #quick-chat-side{
+        display: none;
+    }
+    #aside-menu{
+        max-width: 25%;
+    }
+  }
+
